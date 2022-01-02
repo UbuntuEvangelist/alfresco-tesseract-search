@@ -88,11 +88,11 @@
 		<alfresco.db.url>jdbc:h2:${alfresco.data.location}/h2_data/${alfresco.db.name};${alfresco.db.params}</alfresco.db.url>
 		<alfresco.db.datasource.class>org.h2.jdbcx.JdbcDataSource</alfresco.db.datasource.class>
 		<webapp.log.level>error</webapp.log.level>
-		<webapp.log.dir></webapp.log.dir>
+		<webapp.log.dir/>
 		<!-- End of testing webapp specific properties -->
 		<!-- Module specific build time properties -->
 		<module.log.level>debug</module.log.level>
-		<spring.version>3.0.5.RELEASE</spring.version>
+		<spring.version>5.2.18.RELEASE</spring.version>
 	</properties>
 	<!-- need to list these as a provided so that Maven doesn't download them 
 		and include them in the AMP, they are provided by Alfresco -->
@@ -265,7 +265,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<execute />
+										<execute/>
 									</action>
 								</pluginExecution>
 								<pluginExecution>
@@ -278,7 +278,7 @@
 										</goals>
 									</pluginExecutionFilter>
 									<action>
-										<ignore />
+										<ignore/>
 									</action>
 								</pluginExecution>
 							</pluginExecutions>
